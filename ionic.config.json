@@ -1,0 +1,7 @@
+{
+  "name": "meesjid-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
