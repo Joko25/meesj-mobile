@@ -74,6 +74,51 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  // Base Color
+  --ms-primary: #008000;
+
+  ion-toolbar {
+    --border-width: 0 !important;
+    --background-color: transparent;
+    --ion-color-base: transparent !important;
+  }
+
+  ion-header {
+    --background-color: transparent;
+    --ion-color-base: transparent !important;
+
+  }
+
+  ion-tab-button {
+    --color-selected: var(--ms-primary);
+   }
+
+   .text-right {
+     text-align: right;
+   }
+
+   .text-left {
+    text-align: left !important;
+    padding-left: 8%;
+   }
+
+  .popover-content{
+    right: 3%;
+    width: 94%;
+  }
+
+  ion-back-button {
+    color: var(--ms-primary);
+  }
+
+  ion-title {
+    .ion-text-left {
+      padding-left: 15px;
+    }
+  }
+
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -184,6 +229,10 @@
     --ion-item-background: #000000;
 
     --ion-card-background: #1c1c1d;
+
+    .ion-toolbar {
+      --border-width: 0 !important;
+    }
   }
 
 
@@ -228,5 +277,9 @@
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+
+    .ion-toolbar {
+      --border-width: 0 !important;
+    }
   }
 }

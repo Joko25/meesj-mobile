@@ -1,0 +1,40 @@
+<ion-header no-border translucent="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      <img alt="logo" height="40"   src="./../../assets/icon/logo1.png" > 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list-header>
+    <ion-label>List Surat</ion-label>
+  </ion-list-header>
+
+  <ion-list *ngFor="let list of listSurat">
+    <ion-item-sliding (click)="choose(list)">
+      <!-- <ion-item-options side="start">
+        <ion-item-option (click)="favorite(item)">Favorite</ion-item-option>
+        <ion-item-option color="danger" (click)="share(item)">Share</ion-item-option>
+      </ion-item-options> -->
+  
+      <ion-item>
+        <ion-label>{{list.nomor}}. {{list.nama}} </ion-label>
+        <ion-label slot="end" class="text-right">{{list.asma}}</ion-label>
+      </ion-item>
+  
+      <ion-item-options side="end">
+        <ion-item-option (click)="details($event, list)">detail</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <!-- <ion-list *ngFor="let list of listSurat">
+
+    <ion-item>
+      <ion-label>{{list.nomor}}. {{list.nama}} </ion-label>
+      <ion-label slot="end" class="text-right">{{list.asma}}</ion-label>
+    </ion-item>
+  </ion-list> -->
+
+</ion-content>

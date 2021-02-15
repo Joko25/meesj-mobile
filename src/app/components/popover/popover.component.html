@@ -1,0 +1,15 @@
+<ion-card class="popover-modal">
+  <ion-card-content >
+    <ion-item>
+      <ion-label>{{data.nama}}</ion-label>
+      <ion-label slot="end" class="text-right">{{data.asma}}</ion-label>
+
+    </ion-item>
+    
+    <div class="user-info">
+      <p class="item-description">
+        <ion-text [innerHTML]="data.keterangan"></ion-text>
+      </p>
+    </div>
+  </ion-card-content>
+</ion-card>

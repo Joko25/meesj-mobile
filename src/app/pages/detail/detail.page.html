@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="text-left">{{data_surat.nama}} ({{data_surat.arti}})</ion-title>
+    <ion-label slot="end">
+      {{data_surat.asma}}
+    </ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label class="ion-text-center">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</ion-label>  
+  </ion-item>
+  
+
+  <ion-list *ngFor="let ayat of data_ayat.ar">
+
+    <ion-item>
+      <ion-label class="text-right ion-text-wrap">({{ayat.ayat}}) {{ayat.teks}}</ion-label>
+      <!-- <ion-label slot="end" >{{list.asma}}</ion-label> -->
+    </ion-item>
+  </ion-list>
+
+</ion-content>
